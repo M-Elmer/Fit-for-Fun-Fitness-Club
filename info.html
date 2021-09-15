@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+    <h1>Fit for Fun Fitness Club</h1>
+      <nav>
+        <button class="button" onclick="document.location='index.html'">Home</button>
+        <button class="button" onclick="document.location='classes.html'">Classes</button>
+        <button class="button" onclick="document.location='info.html'">Sign Up</button>
+      </nav>
+    </header>
+    <h1>Sign Up Today!</h1>
+    <div class="container">
+        <form method="get" action="thankyou.html">
+          <fieldset>
+            <legend>Information:</legend>
+            <label for="fname">First Name:</label>
+            <input id="fname" type="text" name="fname" placeholder="First Name" autofocus required>
+            <label for="lname">Last Name:</label>
+            <input id="lname" type="text" name="lname" placeholder="Last Name" required>
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="email" placeholder="Email" required>
+            <br>
+            <label for="phone">Phone:</label>
+            <input id="phone" type="text" name="phone" placeholder="Phone" required>
+            <label for="contact">Best way to reach you:</label>
+            <select id="contact" name="contact">
+              <option value="Call">Call</option>
+              <option value="Text">Text</option>
+              <option value="Email">Email</option>
+              <option value="Owl">Owl</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Classes:</legend>
+            What classes would you like to take?
+            <br>
+            <label for="crstrn">Cross Training</label>
+            <input id="crstrn" type="checkbox" name="crstrn">
+            <label for="sprint">Sprint</label>
+            <input id="sprint" type="checkbox" name="sprint">
+            <label for="spin">Spin</label>
+            <input id="spin" type="checkbox" name="spin">
+            <label for="pump">Body Pump</label>
+            <input id="pump" type="checkbox" name="pump">
+            <label for="step">Step Interval</label>
+            <input id="step" type="checkbox" name="step">
+            <label for="advct">Advanced Cross Training</label>
+            <input id="advct" type="checkbox" name="advct">
+            <label for="mxft">MixxedFIT</label>
+            <input id="mxft" type="checkbox" name="mxft">
+            <label for="zumba">Zumba</label>
+            <input id="zumba" type="checkbox" name="zumba">
+            <br>
+            <br>
+            What time of day works best for you?
+            <br>
+            <label for="am">AM</label>
+            <input id="am" type="radio" name="am">
+            <label for="pm">PM</label>
+            <input id="pm" type="radio" name="pm">
+          </fieldset>
+          <input type="submit" name="Submit" value="Submit" id="submit" class="submit">
+
+        </form>
+    </div>
+
+  </body>
+</html>
